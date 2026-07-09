@@ -4,7 +4,7 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
-  return {
+  return { base: '/umn-appstore/'
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -20,4 +20,4 @@ export default defineConfig(() => {
     },
   };
 }); 
-base: '/umn-appstore/'
+
